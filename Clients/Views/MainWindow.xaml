@@ -1,0 +1,23 @@
+﻿<Window x:Class="Clients.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clients"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Khaki">
+        <StackPanel Width="300">
+
+            <Button Margin="5" Width="200" Height="50" Content="Download Image" FontSize="22" Background="Green" Foreground="White" Command="{Binding DownloadCommand}">
+            
+        </Button>
+
+            <Button Margin="5" Width="100" Height="50" Content="Send" FontSize="22" Background="DarkMagenta" Foreground="White" Command="{Binding SendCommand}"  >
+                
+            </Button>
+        
+        </StackPanel>
+        
+    </Grid>
+</Window>
