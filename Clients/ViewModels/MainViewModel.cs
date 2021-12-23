@@ -20,12 +20,22 @@ namespace Clients.ViewModels
         {
             DownloadCommand = new RelayCommand((sender) =>
             {
-                //OpenFileDialog openFile = new OpenFileDialog();
-                //openFile.Filter = "Txt File (*.txt)|*.txt";
-                //openFile.Title = "Select File";
+                //// open file dialog   
+                //OpenFileDialog open = new OpenFileDialog();
+                //// image filters  
+                //open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+                //if (open.ShowDialog() == DialogResult.OK)
+                //{
+                //    // display image in picture box  
+                //    pictureBox1.Image = new Bitmap(open.FileName);
+                //    // image file path  
+                //    textBox1.Text = open.FileName;
+                //}
 
-                MessageBox.Show("Salam");
-                
+                OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                openFileDialog1.DefaultExt = "png";
+                openFileDialog1.ShowDialog();
+
             });
 
             SendCommand = new RelayCommand((sender) =>
