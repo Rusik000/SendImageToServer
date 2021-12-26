@@ -70,7 +70,7 @@ namespace Clients.ViewModels
         private async void Send()
         {
             var ipadress = IPAddress.Parse("192.168.1.109");
-            var port = 2501;
+            var port = 1804;
             using (var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
             {
                 var ep = new IPEndPoint(ipadress, port);

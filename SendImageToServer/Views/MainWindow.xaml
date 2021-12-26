@@ -3,20 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SendImageToServer"
+        xmlns:local="clr-namespace:SendImageToServer" 
+        xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:vm="clr-namespace:SendImageToServer.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-
-    <Grid>
-        <ListView x:Name="ImageList" Background="GreenYellow" ItemsSource="{Binding ImageList}" >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Background="Blue">
-                        <Image Width="200" Height="200" Stretch="Fill" Source="{Binding ServerImage}" ></Image>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+   
+    
+    <Grid >
         
+        
+        <ListBox ItemsSource="{Binding Items}">
+            
+        </ListBox>
+
     </Grid>
 </Window>
