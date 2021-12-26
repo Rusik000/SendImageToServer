@@ -7,19 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
-    <Grid  >
-        <ListView x:Name="ImageList" Background="GreenYellow">
-
+    <Grid>
+        <ListView x:Name="ImageList" Background="GreenYellow" ItemsSource="{Binding ImageList}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Background="Blue">
-                        <Image Width="200" Height="200" Stretch="Fill" Source="{Binding Something}" ></Image>
+                        <Image Width="200" Height="200" Stretch="Fill" Source="{Binding ServerImage}" ></Image>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
-                
-           
-            
         </ListView>
         
     </Grid>

@@ -10,14 +10,16 @@
         <StackPanel Width="300">
 
             <Button Margin="5" Width="200" Height="50" Content="Download Image" FontSize="22" Background="Green" Foreground="White" Command="{Binding DownloadCommand}">
-            
-        </Button>
+
+            </Button>
 
             <Button Margin="5" Width="100" Height="50" Content="Send" FontSize="22" Background="DarkMagenta" Foreground="White" Command="{Binding SendCommand}"  >
-                
+
             </Button>
-        
+
+            <Image Name="MyImage" Stretch="Fill" Width="200" Height="200" VerticalAlignment="Center" ></Image>
+
         </StackPanel>
-        
+
     </Grid>
 </Window>
